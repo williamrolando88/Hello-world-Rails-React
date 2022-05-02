@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'static/index'
-  resources :greetings
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  namespace :api do
+    resources :greetings, only: [:index, :show]
+  end
 
-  # Defines the root path route ("/")
+  get 'static/index'
   root "static#index"
 end
