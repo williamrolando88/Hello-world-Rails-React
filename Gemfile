@@ -72,3 +72,6 @@ group :test do
 end
 
 gem "rspec-rails", "~> 5.1"
+
+gem "webpacker", "~> 5.4"
+gem "react-rails", "~> 2.6"
