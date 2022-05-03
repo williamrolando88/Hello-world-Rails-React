@@ -9,7 +9,7 @@ class Api::GreetingsController < ApplicationController
     if @greeting
       render json: @greeting
     else
-      render json: { error: "Greeting not found" }, status: 404
+      render json: { error: 'Greeting not found' }, status: 404
     end
   end
 end
