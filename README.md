@@ -26,7 +26,7 @@ This monolithic app renders a random greeting message to client
 
 <!-- There is no Live Demo available at the moment -->
 
-If you want to see a live demo of this project, take a look at the default front-end interface at this [link]()
+If you want to see a live demo of this project, take a look at the default front-end interface at this [link](https://wr88-hello-react-rails.herokuapp.com/)
 
 ## Authors
 
