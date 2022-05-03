@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :api do
-    resources :greetings, only: [:index, :show]
+    get 'greetings/random'
   end
 
   get 'static/index'
