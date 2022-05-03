@@ -14,11 +14,6 @@ const App = () => {
         </Routes>
       </BrowserRouter>
     </Provider>
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<Greet />} />
-    //   </Routes>
-    // </BrowserRouter>
   );
 };
 
