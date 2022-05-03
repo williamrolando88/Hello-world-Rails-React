@@ -1,13 +1,19 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchingData } from '../redux/greetings/greetingsReducer';
 
 const Greet = () => {
-  const greeting = useSelector((store) => store.greetings.greet);
+  const dispatch = useDispatch();
+  const greeting = useSelector((store) => store.greetingsReducer);
+
+  const handleClick = () => {
+    dispatch(fetchingData);
+  };
 
   return (
     <div>
       <div>{greeting}</div>
-      <button>Greet me!</button>
+      <button onClick={handleClick}>Greet me!</button>
     </div>
   );
 };
